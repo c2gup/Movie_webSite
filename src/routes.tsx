@@ -5,6 +5,7 @@ import Error from "./pages/error";
 import Movie from "./pages/movie";
 import TvSeries from "./pages/tv-series";
 import Bookmark from "./pages/bookmark";
+import Anupam from "./components/movie-list/anupam";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
   {
     path: "/movies",
     element: <Movie />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/anupam",
+    element: <Anupam />,
     errorElement: <Error />,
   },
   {
